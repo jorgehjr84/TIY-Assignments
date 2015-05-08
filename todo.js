@@ -43,7 +43,7 @@ expect(taskList.length).to.equal(5)
 
 
 //How do I delete an item from my taskList???
-taskList.splice(3);
+taskList.splice(3,1);
 
 
 console.log(taskList[1], taskList[3], taskList[2], taskList[4]);
