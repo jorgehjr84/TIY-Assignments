@@ -38,5 +38,8 @@ expect(taskList[3]).to.equal("Wash the car")
 expect(taskList.length).to.equal(4)
 
 
+//How do I delete an item from my taskList???
+taskList.splice(3);
 
-console.log(taskList[3]);
+
+console.log(taskList[1], taskList[3]);
