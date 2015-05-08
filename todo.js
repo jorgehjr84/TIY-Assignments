@@ -33,6 +33,7 @@ addTaskToList("Mow the lawn", taskList);
 expect(taskList[2]).to.equal("Mow the lawn")
 expect(taskList.length).to.equal(3);
 
+addTaskToList("Wash the car", taskList);
 expect(taskList[3]).to.equal("Wash the car")
 expect(taskList.length).to.equal(4)
 
