@@ -29,9 +29,13 @@ addTaskToList("Take out the trash", taskList);
 expect(taskList[1]).to.equal("Take out the trash");
 expect(taskList.length).to.equal(2);
 
-addTaskList("Mow the lawn", taskList);
+addTaskToList("Mow the lawn", taskList);
 expect(taskList[2]).to.equal("Mow the lawn")
+expect(taskList.length).to.equal(3);
+
+expect(taskList[3]).to.equal("Wash the car")
+expect(taskList.length).to.equal(4)
 
 
 
-console.log("This is a taskList[0]", taskList[1]);
+console.log(taskList[3]);
