@@ -1,7 +1,7 @@
 var expect = require('chai').expect;
 
 
-var taskList = [ ];
+var taskList = [];
 
 function listTasks(){
 }
@@ -17,8 +17,9 @@ function addTaskToList(task, list){
 
 
 // Editing Task
-
-
+function editTask(position, newTask){
+  return taskList[position] = newTask;
+}
 
 /*How do I delete an item from my taskList???
 taskList[1] = taskList[taskList.length - 1];
@@ -63,5 +64,12 @@ expect(taskList[2]).to.equal("Mow the lawn and rake the leaves");
 
 
 
+
+
+
+
+
+editTask(3, "Wash both cars now sucka");
+expect(taskList[3]).to.equal ("Wash both cars now sucka");
 
 console.log(taskList);
