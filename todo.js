@@ -43,11 +43,11 @@ expect(taskList.length).to.equal(5)
 
 
 //How do I delete an item from my taskList???
-addTaskToList(2) = addTaskToList[addTaskToList.length - 1];
+addTaskToList[1] = addTaskToList[addTaskToList.length - 1];
 
 
-//Sorting my taskList
+/*Sorting my taskList
 taskList.sort([1,2,3,4,5,6]);
-
+*/
 
 console.log(addTaskToList);
