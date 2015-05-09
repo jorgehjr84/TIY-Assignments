@@ -48,15 +48,27 @@ expect(toNumber("eight")).to.equal(8);
 expect(toNumber("nine")).to.equal(9);
 */
 
-function plus(a,b){
-  if ( toNumber(a) + toNumber(b) === 0 ) {
-  return = 0;
+function plus(a, b){
+  if ( toNumber(a) + toNumber(b) === 0 ){
+  return 0;
+  }
+  if (toNumber(a) + toNumber(b) === 1){
+    return 1;
+  }
+  if ( toNumber(a) + toNumeber(b) === 2){
+    return 2;
   }
 }
 
 
 expect(plus).to.exist;
-expect(plus("zero" + "zero").to.equal(0);
+expect(plus( "zero","zero")).to.equal(0);
+expect(plus( "zero", "one")).to.equal(1);
+expect(plus( "zero", "two")).to.equal(2);
+expect(plus( "zero", "three")).to.equal(3);
+expect(plus( "zero", "four")).to.equal(4);
+expect(plus( "zero", "five")).to.equal(5);
+
 
 
 console.log(plus("zero" + "zero"));
