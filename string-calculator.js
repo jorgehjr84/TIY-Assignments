@@ -110,6 +110,7 @@ function plus(a, b){
   }
 }
 
+/*
 expect(plus).to.exist;
 expect(plus( "zero","zero")).to.equal(0);
 expect(plus( "zero", "one")).to.equal(1);
@@ -211,9 +212,20 @@ expect(plus("nine", "six")).to.equal(15);
 expect(plus("nine", "seven")).to.equal(16);
 expect(plus("nine", "eight")).to.equal(17);
 expect(plus("nine", "nine")).to.equal(18);
-
+*/
 
 
 
 
 console.log(plus("nine" , "eight"));
+
+
+function minus(a,b){
+  if ( toNumber(a) - toNumber(b) === -9){
+  return 9;
+}
+
+
+
+expect(minus("zero", "zero")).to.equal(0);
+expect(minus("zero", "one")).to.equal(1);
