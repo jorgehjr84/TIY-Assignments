@@ -42,12 +42,22 @@ expect(taskList[4]).to.equal("Walk the dogs")
 expect(taskList.length).to.equal(5)
 
 
-//How do I delete an item from my taskList???
+/*How do I delete an item from my taskList???
 addTaskToList[1] = addTaskToList[addTaskToList.length - 1];
-
-
-/*Sorting my taskList
-taskList.sort([1,2,3,4,5,6]);
 */
 
-console.log(addTaskToList);
+/* Editing Task
+function newTask(position, newTask){
+  return taskList[position] = newTaskName;
+}
+*/
+
+
+
+//Sorting my taskList
+addTaskToList.sort(function (taskList){
+  return taskList[0,3,2,1,4,]
+}
+
+
+console.log(taskList);
