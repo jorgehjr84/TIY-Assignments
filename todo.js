@@ -16,7 +16,23 @@ function addTaskToList(task, list){
 }
 
 
+// Editing Task
 
+
+
+/*How do I delete an item from my taskList???
+taskList[1] = taskList[taskList.length - 1];
+var newTaskList =  newTaskList[taskList.length - 1];
+  for (newTaskList = 0 ; taskList < newTaskList ; taskList++){
+    newTaskList[i] = taskList[i];
+  }
+*/
+
+/*Sorting my taskList
+addTaskToList.sort(function (taskList){
+  return taskList[0,3,2,1,4,]
+}
+*/
 expect(taskList.length).to.equal(0);
 
 addTaskToList("Remember the milk", taskList);
@@ -41,23 +57,11 @@ addTaskToList("Walk the dogs", taskList);
 expect(taskList[4]).to.equal("Walk the dogs")
 expect(taskList.length).to.equal(5)
 
-
-/*How do I delete an item from my taskList???
-addTaskToList[1] = addTaskToList[addTaskToList.length - 1];
-*/
-
-/* Editing Task
-function newTask(position, newTask){
-  return taskList[position] = newTaskName;
-}
-*/
+editTask(2, "Mow the lawn and rake the leaves");
+expect(taskList[2]).to.equal("Mow the lawn and rake the leaves");
 
 
 
-//Sorting my taskList
-addTaskToList.sort(function (taskList){
-  return taskList[0,3,2,1,4,]
-}
 
 
 console.log(taskList);
