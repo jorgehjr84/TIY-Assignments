@@ -31,6 +31,7 @@ addTaskToList.sort(function (taskList){
 */
 expect(taskList.length).to.equal(0);
 
+
 addTaskToList("Remember the milk", taskList);
 expect(taskList[0]).to.equal("Remember the milk");
 expect(taskList.length).to.equal(1);
@@ -60,8 +61,10 @@ editTask(3, "Wash both cars now sucka");
 expect(taskList[3]).to.equal ("Wash both cars now sucka");
 
 
+
+
 //How do I delete an item from my taskList???
-taskList[1] = taskList[taskList.length - 1];
+taskList[0] = taskList[taskList.length - 1];
 var newTaskList = taskList - 1;
 newTaskList =  newTaskList[taskList.length - 1];
   for (newTaskList = 0 ; taskList < newTaskList ; taskList++){
@@ -70,4 +73,6 @@ newTaskList =  newTaskList[taskList.length - 1];
 
 
 
+
 console.log(taskList);
+console.log(taskList.length);
