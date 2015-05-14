@@ -1,6 +1,6 @@
 document.head.parentElement.className = "js";
 
-var elements =document.querySelectorAll();
+var elements = document.querySelector('tab-current');
 
 _.forEach(elements, function(element,index, elements){
 	element.addEventListener('click', function(){
