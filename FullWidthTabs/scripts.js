@@ -6,7 +6,7 @@ _.forEach(elements, function(element,index, elements){
 	element.addEventListener('click', function(){
 		element.parentElement.clasList.toggle('tab-current')
 	});
-}); 
+});
 
 alert(is this working);
 
@@ -22,4 +22,4 @@ _.forEach(elements, function(element, index, elements){
     element.parentElement.classList.toggle('cbp-ntopen');
 });
 });
-*/
+*/ 
