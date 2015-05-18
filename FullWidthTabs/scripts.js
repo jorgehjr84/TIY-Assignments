@@ -8,7 +8,7 @@ _.forEach(elements, function(element,index, elements){
 	});
 });
 
-alert('is this working');
+alert(is this working);
 
 /*document.head.parentElement.className = "js";
 
@@ -22,4 +22,4 @@ _.forEach(elements, function(element, index, elements){
     element.parentElement.classList.toggle('cbp-ntopen');
 });
 });
-*/
+*/ 
