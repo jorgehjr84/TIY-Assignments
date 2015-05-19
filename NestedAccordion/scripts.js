@@ -1,27 +1,14 @@
-//debugger;
+// TO OPEN THE ACCORDION:
+// What event should I listen for? `click`
+// What element should listen for that event? `.cbp-nttrigger`
+// _.forEach(document.querySelectorAll('.cbp-nttrigger'), function(element){
+//     // What should I do when that event fires?
+//     element.addEventListener('click', function(){
+//         //   1. Toggle `.cbp-ntopen` from parent `<li>` element
+//         element.parentElement.classList.toggle('cbp-ntopen');
+//     });
+// });
 
-
-document.head.parentElement.className = "js";
-
-var elements =document.querySelectorAll('.cbp-nttrigger');
-
-
-
-_.forEach(elements, function(element, index, elements){
-  element.addEventListener('click', function(){
-    console.log(elements, index, element);
-    element.parentElement.classList.toggle('cbp-ntopen');
+$('.cbp-nttrigger').on('click', function(event){
+    $(event.target).parent().toggleClass('cbp-ntopen');
 });
-});
-
-
-/*var elements2 =document.querySelectorAll('h4');
-
-
-_.forEach(elements2, function(element, index, elements2){
-  element.addEventListener('click', function(){
-    console.log(elements2, index, element);
-    element.parentElement.classList.toggle('cbp-ntopen');
-});
-});
-*/
