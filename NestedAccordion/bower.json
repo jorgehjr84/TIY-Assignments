@@ -1,0 +1,21 @@
+{
+  "name": "NestedAccordian",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jorgehjr84/TIY-Assignments",
+  "authors": [
+    "Jorge Hernandez <jorge_l_hernandez@yahoo.com>"
+  ],
+  "main": "index.html",
+  "license": "CC0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "lodash": "~3.8.0",
+    "normalize.css": "~3.0.3"
+  }
+}
