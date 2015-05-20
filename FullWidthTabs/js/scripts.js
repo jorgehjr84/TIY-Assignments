@@ -1,41 +1,25 @@
-(function(window) { //IIFE: Immediately Invoked Function Expression
-  'use strict';
+document.head.parentElement.className = "js";
 
-//document.head.parentElement.className ="js";
+var elements = document.querySelector('tab-current');
 
-var elements = document.querySelectorAll('.a');
-var activeTab = element.parentElement.classList.toggle('tab-current');
-//
-// function clickedTab(){
-//
-//
-elements.addEventListener('click', function addTodoController(event){
+_.forEach(elements, function(element,index, elements){
+	element.addEventListener('click', function(){
+		element.parentElement.clasList.toggle('tab-current')
+	});
+});
 
-return activeTab;
+alert(is this working);
 
+/*document.head.parentElement.className = "js";
 
-	};
-// 	var currentTab = element.parentElement.classList('tab-current');
-// 	var notCurrentTab = element.parentElement.classList('icon-food');
-//
-// 	if(event.click) return currentTab;
-// 	else{
-// 		return notCurrentTab;
-// 	}
-// }
-// )};
-
-//
-// _.forEach(elements, function(elements, index, elements){
-// 	elements.addEventListener('click', function(){
-// 			console.log('Hi');
-// 		element.parentElement.classList.toggle('tab-current');
-
-	// if ('click'){
-	// 	return element.parentElement.classList.toggle('tab-current');
-	// }else{
-	// 	return tabElement;
-	//
+var elements =document.querySelectorAll('h3');
 
 
-}) (window);
+
+_.forEach(elements, function(element, index, elements){
+  element.addEventListener('click', function(){
+    console.log(elements, index, element);
+    element.parentElement.classList.toggle('cbp-ntopen');
+});
+});
+*/ 

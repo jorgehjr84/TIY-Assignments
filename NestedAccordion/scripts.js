@@ -8,7 +8,16 @@
 //         element.parentElement.classList.toggle('cbp-ntopen');
 //     });
 // });
+//
+// $('.cbp-nttrigger').on('click', function(event){
+//     $(event.target).parent().toggleClass('cbp-ntopen');
+// });
 
-$('.cbp-nttrigger').on('click', function(event){
-    $(event.target).parent().toggleClass('cbp-ntopen');
-});
+
+(function(window){
+
+
+
+
+
+})(window);
