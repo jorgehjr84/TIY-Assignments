@@ -1,20 +1,42 @@
-.main{
-  border-style: solid;
-  color:cornflowerblue;
-  padding: 1em 1.875em 3.125em 1.875em;
+ul {
+  list-style: none;
 }
+/*Main border*/
 
-head{
-  color:cornflowerblue;
+.cbp-vm-switcher {
+  color: cornflowerblue;
+  padding: 20px;
+  border: 3px solid;
 }
-h1{
-  color:cornflowerblue;
-}
+/*Bottom border below view selector*/
 
-.main,
-.container > header{
-  padding:0 1.875em 3.125em 1.875em;
+.cbp-vm-options {
+  border-bottom: 3px solid cornflowerblue;
 }
-.container > header{
+/*Title of product*/
+
+.cbp-vm-title {
+  color: cornflowerblue;
+}
+/*Price*/
+
+.cbp-vm-price {
+  color: darkgrey;
+}
+/*Details of product*/
+
+.cbp-vm-details {
+  font-size: small;
+}
+head {
+  color: cornflowerblue;
+}
+h1 {
+  color: cornflowerblue;
+}
+.main, .container > header {
+  padding: 0 1.875em 3.125em 1.875em;
+}
+.container > header {
   padding: 2.875em 1.875em 1.875em;
 }

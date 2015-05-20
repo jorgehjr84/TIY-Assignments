@@ -1,4 +1,4 @@
-.cbp-ntaccordion li {
+ul {
   list-style:none
 }
 
@@ -9,7 +9,7 @@
 body {
   font-family: Arial, sans-serif;
   font-weight: normal;
-  color: lightgray;
+  color: darkgray;
 }
 h3, h4 {
   color: cornflowerblue;
@@ -19,6 +19,8 @@ h3 {
   font-size: 2.75em;
   border-bottom: 1px solid lightgray;
   text-indent:30px;
+  /*list-style-image - to add the arrows?*/
+  /*list-style-position*/
 }
 h4 {
   color: cornflowerblue;
@@ -33,3 +35,28 @@ h5 {
 .cbp-ntopen > .cbp-ntcontent {
   display: block;
 }
+
+.cbp-nttrigger::before{
+  color:lightgrey;
+  content:'\2794';
+  padding-right: 0.5em;
+}
+
+.cbp-ntopen > .cbp-nttrigger::before{
+  color:lightgrey;
+  content: '\2794';
+
+}
+
+.cbp-nttrigger:hover{
+  cursor: pointer;
+}
+
+
+.cbp-nttrigger:hover::before{
+  color:cornflowerblue;
+}
+
+/*li:hover{
+  cursor:pointer;
+}*/
