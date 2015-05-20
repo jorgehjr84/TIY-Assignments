@@ -1,0 +1,42 @@
+ul {
+  list-style: none;
+}
+/*Main border*/
+
+.cbp-vm-switcher {
+  color: cornflowerblue;
+  padding: 20px;
+  border: 3px solid;
+}
+/*Bottom border below view selector*/
+
+.cbp-vm-options {
+  border-bottom: 3px solid cornflowerblue;
+}
+/*Title of product*/
+
+.cbp-vm-title {
+  color: cornflowerblue;
+}
+/*Price*/
+
+.cbp-vm-price {
+  color: darkgrey;
+}
+/*Details of product*/
+
+.cbp-vm-details {
+  font-size: small;
+}
+head {
+  color: cornflowerblue;
+}
+h1 {
+  color: cornflowerblue;
+}
+.main, .container > header {
+  padding: 0 1.875em 3.125em 1.875em;
+}
+.container > header {
+  padding: 2.875em 1.875em 1.875em;
+}

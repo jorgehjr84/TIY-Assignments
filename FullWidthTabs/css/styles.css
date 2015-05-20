@@ -1,0 +1,41 @@
+body{
+	font-family: Arial, sans-serif;
+	color:cornflowerblue;
+	font-size: 80%;
+}
+
+.content section[id^="section-"] {
+	display:none;
+	padding-left:1em;
+	padding-right:1em;
+}
+
+.content section[id^="section-"].content-current{
+	display:block;
+}
+
+.content section[id^="section-"]::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.mediabox{
+	width:33%;
+	float: left;
+	padding-left:1em;
+	padding-right:1em;
+	box-sizing: border-box;
+}
+
+
+.mediabox img{
+	width: 100%;
+}
+
+
+
+/*img{
+	width:100%; 100 percent of the width of the containing element
+
+}*/
