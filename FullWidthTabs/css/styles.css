@@ -24,7 +24,7 @@ body{
 	width:33%;
 	float: left;
 	padding-left:1em;
-	padding-right:1em;
+padding-right:1em;
 	box-sizing: border-box;
 }
 
@@ -33,6 +33,9 @@ body{
 	width: 100%;
 }
 
+ul {
+	border
+}
 
 
 /*img{
