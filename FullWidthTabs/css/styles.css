@@ -35,6 +35,8 @@ padding-right:1em;
 	width: 100%;
 }
 
+
+
 /*horizontal tabs*/
 nav ul li {
 display:inline-block;
@@ -42,6 +44,7 @@ display:inline-block;
 
 /*Centering the tabs in the ul*/
 ul {
+	border-bottom: .1em solid cornflowerblue;
 	text-align: center;
 }
 
@@ -49,12 +52,20 @@ ul {
 li {
 	border: .1em solid lightgrey ;
 	line-height:2.75em;
-	padding-right:3em;
-	padding-left:3em;
+	padding-right:2.5em;
+	padding-left:2.5em;
 	text-align: center;
 
-
 }
+
+/*links in tabs color change*/
+a {
+	font-size: 10pt;
+	color: lightgrey;
+	text-decoration: none;
+}
+
+
 /*img{
 	width:100%; 100 percent of the width of the containing element
 
