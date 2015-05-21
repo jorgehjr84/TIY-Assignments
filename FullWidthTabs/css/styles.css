@@ -1,3 +1,5 @@
+
+
 body{
 	font-family: Arial, sans-serif;
 	color:cornflowerblue;
@@ -33,11 +35,26 @@ padding-right:1em;
 	width: 100%;
 }
 
-ul {
-	border
+/*horizontal tabs*/
+nav ul li {
+display:inline-block;
 }
 
+/*Centering the tabs in the ul*/
+ul {
+	text-align: center;
+}
 
+/*border properties*/
+li {
+	border: .1em solid lightgrey ;
+	line-height:2.75em;
+	padding-right:3em;
+	padding-left:3em;
+	text-align: center;
+
+
+}
 /*img{
 	width:100%; 100 percent of the width of the containing element
 
