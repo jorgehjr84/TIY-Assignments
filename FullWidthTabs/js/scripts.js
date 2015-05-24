@@ -1,25 +1,59 @@
-document.head.parentElement.className = "js";
+$(document).ready(function(){
 
-var elements = document.querySelector('tab-current');
+	$('.tabs li').on('click', function(){
 
-_.forEach(elements, function(element,index, elements){
-	element.addEventListener('click', function(){
-		element.parentElement.clasList.toggle('tab-current')
+			//figure out which panel to show
+			var panelToShow = $(this).attr('a');
+			// Hide current panel
+			$('.tabs .content-current').hide(function(){
+
+				$('#' + panelToShow).show();
+			});
+
+			// Show New Panel
+
+
+
 	});
+
+
+
 });
 
-alert(is this working);
-
-/*document.head.parentElement.className = "js";
-
-var elements =document.querySelectorAll('h3');
 
 
 
-_.forEach(elements, function(element, index, elements){
-  element.addEventListener('click', function(){
-    console.log(elements, index, element);
-    element.parentElement.classList.toggle('cbp-ntopen');
-});
-});
-*/ 
+//
+// //Shop Tab
+// $("a.icons-shop").click(function(){
+//
+// })
+//
+//
+//
+// //Drinks Tab
+// $("a.icon-cup").click(function(){
+// 	$("#section-2");
+// })
+//
+// //Food Tab
+// $("a.icon-food").click(function(){
+// 	console.log('Food');
+//
+// })
+//
+//
+//
+// //Lab Tab
+// $("a.icon-lab").click(function(){
+// 	console.log('lab');
+//
+// })
+//
+//
+//
+// //Order Tab
+// $("a.icon-truck").click(function(){
+// 	console.log('truck');
+//
+// })
