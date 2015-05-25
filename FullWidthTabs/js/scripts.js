@@ -1,24 +1,64 @@
-$(document).ready(function(){
+$(document).ready(function() {
 
-	$('.tabs li').on('click', function(){
 
-			//figure out which panel to show
-			var panelToShow = $(this).attr('a');
-			// Hide current panel
-			$('.tabs .content-current').hide(function(){
+$('.tabs nav ul li').on('click',function(){
 
-				$('#' + panelToShow).show();
-			});
-
-			// Show New Panel
-
+	//figure out which panel to show
+	var tabToShow = $(this).attr('rel');
+	//hide current panel
+	$('.tabs .content-current').hide(function(){
+		$('' + tabToShow).show(function(){
+			$(this).addClass('content-current');
+		});
 
 
 	});
+	//show new panel
+
+
+});
+
 
 
 
 });
+
+
+
+
+
+
+  // $('.tabs li').on('click', function() {
+	//
+	// 	$('.tabs li.content-current').removeClass('content-current');
+	// 	$(this).addClass('content-current');
+	//
+	// 	// //figure out which panel to show
+  //    var panelToShow = $(this).attr('rel');
+	//
+	// 	// // Hide current panel
+  //    $('.tabs .content-current').hide(0,(showNextTab);
+	//
+	// 	  function showNextTab(){
+	// 	 	$(this).removeClass('content-current');
+  //      //Show new panel
+  //      $('section' + panelToShow).show(function(){
+  //        $(this).addClass('.content-current');
+	// 		});//End of showNextTab
+	//
+	//  		});//End of hide function
+	//
+	//
+	// 		});//End of click function
+	//
+	// 	}); // End document ready function
+	//
+	//
+	//
+  //   // Show New Panel
+
+
+
 
 
 

@@ -59,7 +59,7 @@ li {
 }
 
 /*links in tabs color change*/
-a {
+li {
 	font-size: 10pt;
 	color: lightgrey;
 	text-decoration: none;
