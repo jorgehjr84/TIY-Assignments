@@ -16,6 +16,13 @@
 
 (function(window){
 
+  $('li').click(function(){
+
+    console.log('Im clicking');
+
+
+  })
+
 
 
 

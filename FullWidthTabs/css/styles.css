@@ -14,6 +14,7 @@ body{
 
 .content section[id^="section-"].content-current{
 	display:block;
+
 }
 
 .content section[id^="section-"]::after {
@@ -40,10 +41,11 @@ padding-right:1em;
 /*horizontal tabs*/
 nav ul li {
 display:inline-block;
+padding-top:5px;
 }
 
 /*Centering the tabs in the ul*/
-ul {
+nav ul {
 	border-bottom: .1em solid cornflowerblue;
 	text-align: center;
 }
@@ -52,6 +54,7 @@ ul {
 li {
 	border: .1em solid lightgrey ;
 	line-height:2.75em;
+	padding-top:5px;
 	padding-right:2.5em;
 	padding-left:2.5em;
 	text-align: center;
@@ -59,7 +62,7 @@ li {
 }
 
 /*links in tabs color change*/
-li {
+ li{
 	font-size: 10pt;
 	color: lightgrey;
 	text-decoration: none;
@@ -78,6 +81,15 @@ img {
 	max-width:100%;
 	height:auto;
 }
+
+/*Border for active tab*/
+.tab-current{
+	border-top-width: .25em;
+	border-color: cornflowerblue;
+	border-bottom-color: white;
+	border-bottom-width: 4px;
+}
+
 /*img{
 	width:100%; 100 percent of the width of the containing element
 
