@@ -1,7 +1,7 @@
-
+@import url(http://fonts.googleapis.com/css?family=Lobster);
 
 body{
-	font-family: Arial, sans-serif;
+	font-family: 'Lobster', cursive;
 	color:cornflowerblue;
 	font-size: 80%;
 }
@@ -42,6 +42,7 @@ padding-right:1em;
 nav ul li {
 display:inline-block;
 padding-top:5px;
+box-sizing: border-box;
 }
 
 /*Centering the tabs in the ul*/
@@ -75,6 +76,7 @@ li {
 
 li:hover {
 	cursor:pointer;
+	color: darkgrey
 }
 
 img {
@@ -90,7 +92,17 @@ img {
 	border-bottom-width: 4px;
 }
 
-/*img{
-	width:100%; 100 percent of the width of the containing element
+/*This is kind of like an 'if' statement in CSS*/
+/*If we are displaying on a screen and the viewport is less than or equal to 840px, then display like this*/
+@media screen and (max-width:840px) {
+	.tabs nav ul li a > span {
+		display: none;
+	}
+}
 
-}*/
+@media screen and (max-width: 500px){
+	.tabs nav ul li{
+		margin:0;
+		width: 20%
+	}
+}
