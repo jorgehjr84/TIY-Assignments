@@ -1,5 +1,7 @@
+@import url(http://fonts.googleapis.com/css?family=Lobster);
+
 body{
-	font-family: Arial, sans-serif;
+	font-family: 'Lobster', cursive;
 	color:cornflowerblue;
 	font-size: 80%;
 }
@@ -12,6 +14,7 @@ body{
 
 .content section[id^="section-"].content-current{
 	display:block;
+
 }
 
 .content section[id^="section-"]::after {
@@ -24,7 +27,7 @@ body{
 	width:33%;
 	float: left;
 	padding-left:1em;
-	padding-right:1em;
+padding-right:1em;
 	box-sizing: border-box;
 }
 
@@ -35,7 +38,71 @@ body{
 
 
 
-/*img{
-	width:100%; 100 percent of the width of the containing element
+/*horizontal tabs*/
+nav ul li {
+display:inline-block;
+padding-top:5px;
+box-sizing: border-box;
+}
 
-}*/
+/*Centering the tabs in the ul*/
+nav ul {
+	border-bottom: .1em solid cornflowerblue;
+	text-align: center;
+}
+
+/*border properties*/
+li {
+	border: .1em solid lightgrey ;
+	line-height:2.75em;
+	padding-top:5px;
+	padding-right:2.5em;
+	padding-left:2.5em;
+	text-align: center;
+
+}
+
+/*links in tabs color change*/
+ li{
+	font-size: 10pt;
+	color: lightgrey;
+	text-decoration: none;
+}
+
+.icons-shop{
+	width: 1px;
+
+}
+
+li:hover {
+	cursor:pointer;
+	color: darkgrey
+}
+
+img {
+	max-width:100%;
+	height:auto;
+}
+
+/*Border for active tab*/
+.tab-current{
+	border-top-width: .25em;
+	border-color: cornflowerblue;
+	border-bottom-color: white;
+	border-bottom-width: 4px;
+}
+
+/*This is kind of like an 'if' statement in CSS*/
+/*If we are displaying on a screen and the viewport is less than or equal to 840px, then display like this*/
+@media screen and (max-width:840px) {
+	.tabs nav ul li a > span {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 500px){
+	.tabs nav ul li{
+		margin:0;
+		width: 20%
+	}
+}
