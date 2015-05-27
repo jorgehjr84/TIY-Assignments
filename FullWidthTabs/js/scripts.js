@@ -1,25 +1,17 @@
-document.head.parentElement.className = "js";
 
-var elements = document.querySelector('tab-current');
+$(function(){
 
-_.forEach(elements, function(element,index, elements){
-	element.addEventListener('click', function(){
-		element.parentElement.clasList.toggle('tab-current')
+	$('tabs li').click(function(event){
+		$(this).siblings().removeClass('tab-current');
+
+		$(this).addClaas('tab-current');
+
+		var panelId = $(this).children('a').attr('href');
+		var $panel = $(panelId);
+
+		$mySection.addClass('content-current')
+		.siblings().removeClass('content-current');
+
 	});
+
 });
-
-alert(is this working);
-
-/*document.head.parentElement.className = "js";
-
-var elements =document.querySelectorAll('h3');
-
-
-
-_.forEach(elements, function(element, index, elements){
-  element.addEventListener('click', function(){
-    console.log(elements, index, element);
-    element.parentElement.classList.toggle('cbp-ntopen');
-});
-});
-*/ 
