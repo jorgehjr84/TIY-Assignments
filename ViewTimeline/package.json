@@ -1,0 +1,25 @@
+{
+  "name": "13--In-the-HTML-of-the-Night",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories":{
+    "doc": "doc"
+  },
+
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "browser-sync start --server --directory --files='index.html,css/*.css,js/*.js'"
+
+},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jorgehjr84/TIY-Assignments"
+  },
+  "author": "Jorge Hernandez",
+  "license": "CC0",
+  "bugs": {
+    "url": "https://github.com/jorgehjr84/TIY-Assignments/issues"
+  },
+  "homepage": "https://github.com/jorgehjr84/TIY-Assignments"
+}
