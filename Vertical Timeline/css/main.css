@@ -107,10 +107,18 @@ textarea {
 
 /*Icon*/
 .timeLine li::before {
-  content: '\2708';
+  content: '\2706';
+  color: cornflowerblue;
   position: absolute;
-  left: 30%;
+  left: 18%;
   font-size: 200%;
+  text-align: center;
+  line-height:1.5ex;
+  height: .75em;
+  width: .75em;
+  border: 0.2em solid cornflowerblue;
+  border-radius: 50%;
+
 }
 
 .timeLine li::after {
@@ -120,9 +128,9 @@ textarea {
 }
 
 .timeLine time {
-  display: inline-block;
+  display: block;
   float: left; width: 14%;
-  margin-right: 24%;
+  margin-right: 10%;
   text-align: right;
 
 }
@@ -146,6 +154,22 @@ textarea {
 /*Curved Edges*/
 .timeLine article{
   border-radius: 1.5ex 1.5ex;
+}
+
+/*time color*/
+.time{
+  color: cornflowerblue;
+}
+
+/*date color and size*/
+.date{
+  font-size: .65em;
+  color: darkgrey;
+}
+
+/*vertical-line*/
+.vertical-line{
+  background-color: cornflowerblue;
 }
 
 
