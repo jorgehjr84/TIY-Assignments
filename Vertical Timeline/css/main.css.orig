@@ -95,14 +95,97 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.timeLine {
+  margin: 5em; padding: 0;
+  list-style: none;
+}
 
+.timeLine li {
+  padding-bottom: 2ex;
+  position: relative;
+}
 
+/*Icon*/
+.timeLine li::before {
+  content: '\2706';
+  color: cornflowerblue;
+  position: absolute;
+  left: 18%;
+  font-size: 200%;
+  text-align: center;
+  line-height:2.5ex;
+  height: 2.5ex;
+  width: 2.5ex;
+  border: 0.2em solid cornflowerblue;
+  border-radius: 50%;
+  background-color: darkblue;
+  z-index: 5;
 
+}
 
+.timeLine li::after {
+  content: " ";
+  display: table;
+  clear: both;
+}
 
+.timeLine time {
+  display: block;
+  float: left; width: 14%;
+  margin-right: 10%;
+  text-align: right;
 
+}
+.timeLine time > * {
+  display: block;
+}
 
+.timeLine article {
+  display: inline-block;
+  float: left; width: 62%;
+  box-sizing: border-box;
+  color: white;
+  background-color: #6CBFEE;
+  padding: 2ex 2em;
+}
 
+.timeLine :nth-child(odd) article {
+  background-color: #0393CE
+}
+
+/*Curved Edges*/
+.timeLine article{
+  border-radius: 1.5ex 1.5ex;
+}
+
+/*time color*/
+.time{
+  color: cornflowerblue;
+}
+
+/*date color and size*/
+.date{
+  font-size: .65em;
+  color: darkgrey;
+}
+
+/*vertical-line*/
+.vertical-line{
+  background-color: cornflowerblue;
+}
+
+/*Vertical Line*/
+.timeLine time::after{
+  content: " ";
+  position: absolute;
+  left:15%;
+  margin-left: 5.5ex;
+  width: 1ex;
+  background-color: cornflowerblue;
+  top:2em;
+  bottom:0;
+  z-index: -1;
+}
 
 
 
