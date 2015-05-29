@@ -107,11 +107,11 @@ textarea {
 
 /*Icon*/
 .timeLine li::before {
-  content: '\2706';
-  color: cornflowerblue;
+  content: '\2708';
   position: absolute;
-  left: 18%;
+  left: 30%;
   font-size: 200%;
+<<<<<<< HEAD
   text-align: center;
   line-height:2.5ex;
   height: 2.5ex;
@@ -121,6 +121,8 @@ textarea {
   background-color: darkblue;
   z-index: 5;
 
+=======
+>>>>>>> parent of bf086a8... Removed circle icon and created circle with border
 }
 
 .timeLine li::after {
@@ -130,9 +132,9 @@ textarea {
 }
 
 .timeLine time {
-  display: block;
+  display: inline-block;
   float: left; width: 14%;
-  margin-right: 10%;
+  margin-right: 24%;
   text-align: right;
 
 }
@@ -158,6 +160,7 @@ textarea {
   border-radius: 1.5ex 1.5ex;
 }
 
+<<<<<<< HEAD
 /*time color*/
 .time{
   color: cornflowerblue;
@@ -186,6 +189,9 @@ textarea {
   bottom:0;
   z-index: -1;
 }
+=======
+
+>>>>>>> parent of bf086a8... Removed circle icon and created circle with border
 
 
 
