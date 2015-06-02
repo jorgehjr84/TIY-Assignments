@@ -1,0 +1,12 @@
+{
+    "name": "FullWidthTabs",
+    "version": "1.0.0",
+    "description": "Blueprint: Responsive Full Width Tabs =========",
+    "main": "index.js",
+    "scripts": {
+        "start": "browser-sync start --server --files='index.html,css/**/*.css,js/**.js'"
+    },
+    "homepage": "https://github.com/jorgehjr84/TIY-Assignments",
+    "author": "Jorge Hernandez",
+    "license": "CC0"
+}
