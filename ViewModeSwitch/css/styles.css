@@ -1,42 +1,67 @@
 ul {
-  list-style: none;
+    display: block;
+    list-style: none;
 }
 /*Main border*/
 
+.cbp-vm-switcher.cbp-vm-view-grid li {
+    display: inline-block;
+    width: 33%;
+}
 .cbp-vm-switcher {
-  color: cornflowerblue;
-  padding: 20px;
-  border: 3px solid;
+    color: cornflowerblue;
+    padding: 20px;
+    border: 3px solid;
 }
 /*Bottom border below view selector*/
 
 .cbp-vm-options {
-  border-bottom: 3px solid cornflowerblue;
+    display: inline-block;
+    color: cornflowerblue;
+    text-decoration: none;
+    border-bottom: 3px solid cornflowerblue;
+    text-align: right;
+    width: 5em height: 5em;
 }
 /*Title of product*/
 
 .cbp-vm-title {
-  color: cornflowerblue;
+    color: cornflowerblue;
+    padding-left: 1em;
 }
 /*Price*/
 
 .cbp-vm-price {
-  color: darkgrey;
+    color: darkgrey;
+}
+.cbp-vm-icon {
+    text-decoration: none;
+    width: 5em;
 }
 /*Details of product*/
 
 .cbp-vm-details {
-  font-size: small;
+    font-size: small;
 }
 head {
-  color: cornflowerblue;
+    color: cornflowerblue;
 }
 h1 {
-  color: cornflowerblue;
+    color: cornflowerblue;
 }
 .main, .container > header {
-  padding: 0 1.875em 3.125em 1.875em;
+    padding: 0 1.875em 3.125em 1.875em;
 }
 .container > header {
-  padding: 2.875em 1.875em 1.875em;
+    padding: 2.875em 1.875em 1.875em;
 }
+.cbp-vm-switcher.cbp-vm-view-list li > * {
+    display: inline-block;
+}
+/*/Image styling for list view*/
+
+.cbp-vm-switcher.cbp-vm-view-list li .cbp-vm-image {
+    width: 25%;
+    max-width: 200px;
+}
+.cbp-vm-switcher.cbp-vm-view-list li .cbp-vm-icons {}
