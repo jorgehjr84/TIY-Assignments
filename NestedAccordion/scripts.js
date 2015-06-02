@@ -14,14 +14,14 @@
 // });
 
 
-(function(window){
+(function(window) {
 
-  $('li').click(function(){
+    $('.cbp-nttrigger').click(function() {
 
-    console.log('Im clicking');
+        $(event.target).parent().toggleClass('cbp-ntopen');
 
 
-  })
+    })
 
 
 
