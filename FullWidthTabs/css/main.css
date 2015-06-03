@@ -96,7 +96,8 @@ nav ul li {
     text-align: center;
 }
 ul {
-    align-items: center;
+    margin-left: 15em;
+    margin-top: 3em;
 }
 /* ==========================================================================
    Helper classes
