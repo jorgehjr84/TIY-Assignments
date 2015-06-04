@@ -89,6 +89,7 @@
   }
   .content {
     display: inline-block;
+    margin-left: 10%;
   }
   p {
     color: darkgrey;
